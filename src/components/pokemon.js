@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Paper, Avatar } from '@material-ui/core';
 import axios from 'axios';
 
 export default class Pokemon extends Component {
@@ -16,11 +17,13 @@ export default class Pokemon extends Component {
             .get(url)
             .then(resp => this.setState({nome: resp.data.name, img: resp.data.sprites.front_default}))
         }
+
         render() {
             return (
             <> 
-            <h2>{this.state.nome}</h2>
-            <img width='100vmin' src={this.state.img} alt='ola' />
+         
+                <Avatar src={this.state.img} />
+                {this.state.nome}
             </ >)
         }
     }

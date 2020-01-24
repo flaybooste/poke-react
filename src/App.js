@@ -1,13 +1,18 @@
 import React from 'react';
+import {Container, Paper} from '@material-ui/core';
 import Pokemon from './components/pokemon';
-import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <Pokemon idpoke='1'></Pokemon>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Container>
+                <Paper variant="outlined">
+                    <Pokemon idpoke='1'/>
+                    <Pokemon idpoke='14'/>
+                </Paper>
+            </Container>
+        </div>
+    );
 }
 
 export default App;
