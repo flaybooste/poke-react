@@ -1,3 +1,13 @@
-.App {
+body{
+  background: #ff7f50;
+}
+.App{
   justify-content: center;
+}
+.poke {
+  background: #ecf0f1;
+
+}
+.paper{
+  height:50%;
 }
